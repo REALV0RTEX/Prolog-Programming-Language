@@ -1,5 +1,5 @@
-# Prolog-Programming-Language
-In this tutorial, the user will understand the concept of Prologs. This logic programming language plays an important role in Artificial Intelligence. In Prolog, logic is expressed as facts and rules that are carried out by running queries.
+# Prolog-Introduction
+This repository contains some explanations that should help the user learn Prolog. This logic programming language plays an important role in Artificial Intelligence. In Prolog, logic is expressed as facts and rules that are carried out by running queries.
 
 # Key Features:
 1. Unification: In order to understand this, one must ask themselves if the given terms can be made to represent the same structure that is being applied.
