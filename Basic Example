@@ -1,14 +1,14 @@
 Although there are many code interpreters for Prolog, my personal favorite is SWISH. It is free to use and works on any computer. 
 The link to SWISH is in the README.md file. Just click on "Program" button when it starts up.
 
-In this example, we will use the 3 facts demonstrated below.
+In this example, we will use the 3 predicates demonstrated below.
 
 Naruto is a ninja.
 All ninjas are stealthy.
 Therefore, Naruto is stealthy.
 
-These 3 facts are expressed in deductive logic which is simple to understand. 
-In Prolog, the facts would be written in the knowledge base as:
+These 3 predicates are expressed in deductive logic which is simple to understand. 
+In Prolog, the first two statements would be written in the knowledge base as:
 
 ninja(naruto).               //fact
 stealthy(X) :- ninja(X).     //rule
