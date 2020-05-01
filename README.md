@@ -15,3 +15,6 @@ This repository contains some explanations that should help the user learn Prolo
 1. Sometimes input and output is not easy.
 2. Prolog doesn't support graphics.
 3. LISP (another programming language) has better input and output features than Prolog.
+
+# Code Interpreter Used
+https://swish.swi-prolog.org/
