@@ -1,0 +1,31 @@
+Although there are many code interpreters for Prolog, my personal favorite is SWISH. It is free to use and works on any computer. 
+The link to SWISH is in the README.md file. Just click on "Program" button when it starts up.
+
+In this example, we will use the 3 facts demonstrated below.
+
+Naruto is a ninja.
+All ninjas are stealthy.
+Therefore, Naruto is stealthy.
+
+These 3 facts are expressed in deductive logic which is simple to understand. 
+In Prolog, the facts would be written in the knowledge base as:
+
+ninja(naruto).               //fact
+stealthy(X) :- ninja(X).     //rule
+
+At the end of each statement, a period must be placed at the end whether it's a fact, rule, or query. 
+The ":-" on line 14 is known as the "turn style operator."
+Some ways to interpret line 14 are "All ninjas are stealthy" or "If it is true that X is a ninja, then it is true that X is stealthy."
+In Prolog, any symbol that begins with an uppercase letter is considered a variable.
+
+Now that the predicates are stated, we can write a query to confirm if Naruto is stealthy.
+To do this, we write:
+
+?- stealthy(naruto).          //query
+
+Once we run the program, it will return the value as "true." 
+If we were to write a different name that was not mentioned in the predicate such as:
+
+?- stealthy(sasuke).          //query
+
+The program would return the value as "false" since that name was not mentioned in the knowledge base.
