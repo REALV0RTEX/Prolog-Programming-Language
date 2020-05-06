@@ -31,15 +31,15 @@ If we want to know the parents of Boruto, we can type:
 
 ?-parent(X, boruto).
 
-This query will tell us who Boruto's parents are. In this case, the parents are Hinata and Naruto.
+This query will tell us who Boruto's parents are. In this case, the parents are "hinata" and "naruto".
 We can do the same with Sarada's parents.
 
 ?-parent(X, sarada).
 
-The query will tell us Sakura and Sasuke are Sarada's parents.
+The query will tell us "sakura" and "sasuke" are Sarada's parents.
 
 
-If we ask the query who Naruto's parents are, it will return false since we haven't assigned his parents to the knowledge base.
+If we ask the query who Naruto's parents are, it will return "false" since we haven't assigned his parents to the knowledge base.
 To fix this, we have to state 2 more facts in the knowledge base such as:
 
 male(minato).
@@ -49,7 +49,7 @@ Now that these facts are placed we can ask:
 
 ?-parent(X,naruto).
 
-As a result, the query will assign Minato as Naruto's parent.
+As a result, the query will assign "minato" as Naruto's parent.
 So far, this is what we have in our knowledge base:
 
 male(naruto).
@@ -77,7 +77,7 @@ Now that we have this rule, we can ask the query who Boruto's grandparent is.
 
 ?-grandparent(X,boruto).
 
-The query will return Minato as Boruto's grandparent.
+The query will return "minato" as Boruto's grandparent.
 
-If we try to do the same with Sarada, the query will return false since the knowledge base doesn't have her grandparent assigned.
+If we try to do the same with Sarada, the query will return "false" since the knowledge base doesn't have her grandparent assigned.
 
