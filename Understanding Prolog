@@ -1,0 +1,31 @@
+Before we start writing some examples, we need to understand some concepts of Prolog.
+Prolog is short for "Programming with logic."
+There are 3 basic constructs in Prolog known as Facts, Rules, and Queries.
+
+Facts are used to state information that is always true.
+Rules state information that relate the facts with one another.
+
+Facts and rules are known as clauses.
+These clauses are in a knowledge base.
+The knowledge base contains relationships that are used to ask questions.
+Queries are used to ask questions about the information stored in the knowledge base.
+
+Most programs that deal with Prolog require a full stop that is interpreted as a period.
+If this is not displayed, Prolog will not start working on the query.
+
+Also, we do not type in the prompt symbol ?- because it is already displayed on the query.
+This symbol is displayed when the Prolog interpreter is waiting to evaluate a query.
+
+When we write a rule, we use the :- symbol and it should be read as "if" or "is implied by."
+The information on the left side is called the head of the rule and the part on the right side is called the body. 
+By doing so, Prolog knows that the body is followed by the information in the knowledge base,
+          therefore, it can infer the head of the statement.
+Since we used the :- symbol, the rule is known as modus ponens.
+
+In Prolog many symbols have a meaning such as:
+A simicolon ; is the Prolog symbol for "or."
+A comma , is another way of saying "and."
+
+In Prolog, any word beginning with an upper-case letter is known as a variable. 
+Variables are used as placeholders for information. 
+
