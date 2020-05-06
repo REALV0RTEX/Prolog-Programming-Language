@@ -1,5 +1,12 @@
 Before we start writing some examples, we need to understand some concepts of Prolog.
 Prolog is short for "Programming with logic."
+
+According to "Learn Prolog Now!," an atom is a string of characters made up of upper-case letters,
+                    lower-case letters, digits, and the underscore character.
+                    
+In Prolog, any word beginning with an upper-case letter is known as a variable. 
+Variables are used as placeholders for information. 
+                    
 There are 3 basic constructs in Prolog known as Facts, Rules, and Queries.
 
 Facts are used to state information that is always true.
@@ -26,6 +33,7 @@ In Prolog many symbols have a meaning such as:
 A simicolon ; is the Prolog symbol for "or."
 A comma , is another way of saying "and."
 
-In Prolog, any word beginning with an upper-case letter is known as a variable. 
-Variables are used as placeholders for information. 
 
+Source:
+Blackburn,Patrick, Bos,Johan, Striegnitz,Kristina. “Chapter 1 Facts, Rules, and Queries.” Learn Prolog Now!, 2012, 
+                              www.learnprolognow.org/lpnpage.php?pagetype=html&amp;pageid=lpn-htmlch1.
