@@ -82,6 +82,7 @@ The query will return "minato" as Boruto's grandparent.
 If we try to do the same with Sarada, the query will return "false" since the knowledge base doesn't have her grandparent assigned.
 
 
-Sources:
+Source:
+"AI Module 3: Prolog." YouTube, uploaded by SAU Game Development, 13 April 2020, 
+                    https://www.youtube.com/watch?v=vKGn70BArw0&feature=youtu.be.
 
-"AI Module 3: Prolog." YouTube, uploaded by SAU Game Development, 13 April 2020, https://www.youtube.com/watch?v=vKGn70BArw0&feature=youtu.be.
