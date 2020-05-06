@@ -1,0 +1,83 @@
+In this example, we will use the same concepts as we did on the Basic Example, except we will add more facts to a rule.
+This time, we will make a simple family tree.
+First, we name some facts as such:
+
+male(naruto).       //fact
+male(sasuke).       //fact 
+male(boruto).       //fact
+female(hinata).     //fact
+female(sakura).     //fact
+female(sarada).     //fact
+
+Next, we will assign 2 parents to a child. This time, each of our facts will use multiple atoms seperated by commas.
+In this case, we will assign Naruto as the parent of Boruto.
+
+parent(naruto, boruto).   //fact
+
+The way you read this fact is by saying, "It is true that Naruto is the parent of Boruto."
+
+We wil also assign Hinata as the parent of Boruto.
+In addition, we will assign Sasuke and Sakura as the parents of Sarada.
+Similar to the recent fact stated above, we can do the same with the following:
+
+parent(hinata, boruto).   //fact
+parent(sasuke, sarada).   //fact
+parent(sakura, sarada).   //fact
+
+Notice how the child is always on the right side of the parent? 
+That's because the statement assigns the parent to be the first name in the parenthesis.
+Now that we have these facts, we can ask the query some questions.
+If we want to know the parents of Boruto, we can type:
+
+?-parent(X, boruto).
+
+This query will tell us who Boruto's parents are. In this case, the parents are Hinata and Naruto.
+We can do the same with Sarada's parents.
+
+?-parent(X, sarada).
+
+The query will tell us Sakura and Sasuke are Sarada's parents.
+
+
+If we ask the query who Naruto's parents are, it will return false since we haven't assigned his parents to the knowledge base.
+To fix this, we have to state 2 more facts in the knowledge base such as:
+
+male(minato).
+parent(minato, naruto).    //fact
+
+Now that these facts are placed we can ask:
+
+?-parent(X,naruto).
+
+As a result, the query will assign Minato as Naruto's parent.
+So far, this is what we have in our knowledge base:
+
+male(naruto).
+male(sasuke). 
+male(boruto).
+male(minato).
+female(hinata).
+female(sakura).
+female(sarada).
+parent(naruto, boruto).
+parent(hinata, boruto).
+parent(sasuke, sarada).
+parent(sakura, sarada).
+parent(minato, naruto).
+
+If we want to know Boruto's grandparent, we have to state a rule in the knowledge base.
+To do this we state:
+
+grandparent(X,Y) :- parent(X,Z), parent(Z,Y).
+
+The way to read this rule is by saying "In order for X to be the grandparent of Y, 
+                                        it must be true that X is the parent of Z and that Z is the parent of Y."
+                                        
+Now that we have this rule, we can ask the query who Boruto's grandparent is.
+
+?-grandparent(X,boruto).
+
+The query will return Minato as Boruto's grandparent.
+
+If we try to do the same with Sarada, the query will return false since the knowledge base doesn't have her grandparent assigned.
+
